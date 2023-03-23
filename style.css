@@ -246,13 +246,20 @@ width definido e deixa de somar os px.*/
   max-width: 300px;
   display: block;
   margin: 20px auto;
-  border: 4px solid;
+  border: 4px solid #222222;
   color: #222222;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.25em;
   padding: 15px 0;
   text-align: center;
+}
+
+.preco-item a:hover {
+  background: #222222;
+  color: white;
+  transition: 0.5s;
+  border: 4px solid white;
 }
 
 @media (max-width: 800px) {
@@ -266,4 +273,42 @@ width definido e deixa de somar os px.*/
   .preco .preco-item:nth-child(2) {
     order: -1;
   }
+}
+
+.qualidade {
+  max-width: 960px;
+  margin: 60 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25em;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2::before {
+  background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2::before {
+  background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2::before {
+  background: #66d9eb;
 }

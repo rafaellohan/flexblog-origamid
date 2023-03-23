@@ -277,7 +277,7 @@ width definido e deixa de somar os px.*/
 
 .qualidade {
   max-width: 960px;
-  margin: 60 auto;
+  margin: 60px auto;
   display: flex;
   flex-wrap: wrap;
 }

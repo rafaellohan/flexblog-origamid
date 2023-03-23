@@ -360,7 +360,7 @@ width definido e deixa de somar os px.*/
   font-family: "Nunito", Arial, Helvetica, sans-serif;
   border: 4px solid #2c70ff;
   background: transparent;
-  padding: 10px;
+  padding: 15px 10px;
   margin: 0px;
   border-radius: 0px;
 }
@@ -382,4 +382,18 @@ width definido e deixa de somar os px.*/
 .newsletter-form button:hover {
   background: #2c30ff;
   transition: 0.5s;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  background: #2c70ff;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25em;
+  color: #122ab2;
 }
